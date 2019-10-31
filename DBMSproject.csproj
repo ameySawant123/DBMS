@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{707ACAF1-4E02-48A0-8227-FFAEEADBC427}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBMSproject</RootNamespace>
+    <AssemblyName>DBMSproject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="delActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delActor.Designer.cs">
+      <DependentUpon>delActor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delepisode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delepisode.Designer.cs">
+      <DependentUpon>delepisode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletemain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletemain.Designer.cs">
+      <DependentUpon>deletemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delMovie.Designer.cs">
+      <DependentUpon>delMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delseries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delseries.Designer.cs">
+      <DependentUpon>delseries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delWriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delWriter.Designer.cs">
+      <DependentUpon>delWriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="episode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="episode.Designer.cs">
+      <DependentUpon>episode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="insertactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertactor.Designer.cs">
+      <DependentUpon>insertactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertmain.Designer.cs">
+      <DependentUpon>insertmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertmovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertmovie.Designer.cs">
+      <DependentUpon>insertmovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertseries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertseries.Designer.cs">
+      <DependentUpon>insertseries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertwriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertwriter.Designer.cs">
+      <DependentUpon>insertwriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="joinmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="joinmain.Designer.cs">
+      <DependentUpon>joinmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="updateAgency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateAgency.Designer.cs">
+      <DependentUpon>updateAgency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatemain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatemain.Designer.cs">
+      <DependentUpon>updatemain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateNetwork.Designer.cs">
+      <DependentUpon>updateNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateProduction.Designer.cs">
+      <DependentUpon>updateProduction.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="delActor.resx">
+      <DependentUpon>delActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delepisode.resx">
+      <DependentUpon>delepisode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletemain.resx">
+      <DependentUpon>deletemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delMovie.resx">
+      <DependentUpon>delMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delseries.resx">
+      <DependentUpon>delseries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delWriter.resx">
+      <DependentUpon>delWriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="episode.resx">
+      <DependentUpon>episode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertactor.resx">
+      <DependentUpon>insertactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertmain.resx">
+      <DependentUpon>insertmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertmovie.resx">
+      <DependentUpon>insertmovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertseries.resx">
+      <DependentUpon>insertseries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertwriter.resx">
+      <DependentUpon>insertwriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="joinmain.resx">
+      <DependentUpon>joinmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="updateAgency.resx">
+      <DependentUpon>updateAgency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatemain.resx">
+      <DependentUpon>updatemain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateNetwork.resx">
+      <DependentUpon>updateNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateProduction.resx">
+      <DependentUpon>updateProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
